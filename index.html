@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歐趴糖</title>
+    <link rel="stylesheet" href="init.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="main-page">
+            <button id="open" class="candy-btn">
+                <i class="fa-solid fa-candy-cane"></i>
+                接受學姊的歐趴糖
+                <i class="fa-solid fa-candy-cane"></i>
+            </button>
+            <a href="" class="no">不接受</a>
+        </div>
+        <div class="open-page">
+            <span class="page-wrapper" style="background-color: var(--red);"></span>
+            <span class="page-wrapper" style="background-color: var(--blue);"></span>
+            <span class="page-wrapper main-wrapper" style="background-color: var(--bg-white);">
+                <h1>接受到學姊的歐趴糖!!</h1>
+                <p>yayaya</p>
+            </span>
+        </div>
+        <script>
+            function randomizeElementPosition(element) {
+                var windowWidth = $(window).width();
+                var windowHeight = $(window).height();
+
+                var randomPosX = Math.floor(Math.random() * windowWidth);
+                var randomPosY = Math.floor(Math.random() * windowHeight);
+
+                element.css("position","absolute");
+                element.css("left",randomPosX+"px");
+                element.css("top",randomPosY+"px");
+            }
+
+
+            const open_btn = $("#open");
+            const no_btn = $(".no");
+
+            no_btn.click(function (e) {
+                e.preventDefault();
+                randomizeElementPosition(no_btn);
+            });
+
+            const page_wrapper = $(".page-wrapper");
+
+            open_btn.click(function (e) {
+                e.preventDefault();
+                gsap.to(page_wrapper, {
+                    duration: 1, stagger: 0.13, x: "-100%", ease: "ease-out"
+                })
+            });
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>

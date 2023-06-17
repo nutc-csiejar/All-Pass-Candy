@@ -1,0 +1,87 @@
+:root {
+    --background-color:rgb(15, 15, 15) ;
+    --yellow:#FFD700;
+    --orange:#FFA500;
+    --pink:#ffc0cb;
+    --green:#00ff00;
+    --blue:#00ffff;
+    --red:#ff4500;
+    --white:white;
+    --bg-white:rgb(240,240,240);
+    /* #FFD700
+橙色：#FFA500
+粉紅色：#FFC0CB
+明亮的綠色：#00FF00
+水藍色：#00FFFF */
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.app {
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.candy-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    margin-bottom: 10px;
+}
+.candy-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: 100;
+    background-color: white !important;
+    bottom: 5%;
+    left: 0;
+    position: absolute;
+}
+
+.candy-btn:hover,.candy-btn:focus,.no:hover,.no:focus {
+    filter: drop-shadow(0px 5px 15px rgba(255,255,255,.35)) 
+}
+
+.no {
+    color: white;
+    font-size: 13px;
+}
+.no:hover {
+    color: white !important;
+}
+
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrapper h1 {
+    font-weight: bold;
+}
