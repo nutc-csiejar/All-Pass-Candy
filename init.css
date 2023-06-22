@@ -26,3 +26,8 @@ body {
     font-family: GenWanMin, 'Times New Roman', Times, serif;
     font-weight: 500;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    opacity: .5;
+}

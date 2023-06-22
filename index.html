@@ -14,6 +14,8 @@
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 
+    <link rel="preload" href="GenWanMin-R.ttc" as="font" type="font/ttc" crossorigin>
+
 </head>
 
 <body>
@@ -30,8 +32,19 @@
             <span class="page-wrapper" style="background-color: var(--red);"></span>
             <span class="page-wrapper" style="background-color: var(--blue);"></span>
             <span class="page-wrapper main-wrapper" style="background-color: var(--bg-white);">
-                <h1>接受到學姊的歐趴糖!!</h1>
-                <p>yayaya</p>
+                
+                <div class="candy-group">
+                    <div class="candy"><img src="./src/oreo.png" alt=""></div>
+                    <div class="candy"><img src="./src/oreo.png" alt=""></div>
+                    <div class="candy"><img src="./src/oreo.png" alt=""></div>
+                    <div class="candy"><img src="./src/oreo.png" alt=""></div>
+                    <div class="candy"><img src="./src/oreo.png" alt=""></div>
+                </div>
+                <div class="container">
+                    <h1 class="title">接受到學姊的歐趴糖!!</h1>
+                    <p class="decryption">Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deLorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus ad nihil architecto voluptas vitae excepturi dolores! Asperiores ducimus, alias ad placeat reiciendis ipsa beatae dolores libero eos laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae totam hic nulla quasi quam natus animi facere deserunt dolorem vitae voluptates eius officia veritatis voluptatibus, ut labore deleniti asperiores.leniti asperiores.</p>
+                </div>
+
             </span>
         </div>
         <script>
@@ -63,10 +76,13 @@
                 gsap.to(page_wrapper, {
                     duration: 1, stagger: 0.13, x: "-100%", ease: "ease-out"
                 })
+                gsap.to(".title",{
+                    duration:1,opacity:1
+                },">")
+                gsap.to(".decryption",{
+                    duration:1,opacity:1
+                },">")
             });
-
-
-
         </script>
     </div>
 </body>
